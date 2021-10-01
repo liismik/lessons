@@ -1,5 +1,5 @@
 import './AddItemForm.css';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 function AddItemForm(props) {
   const nameInputRef = useRef();
@@ -17,6 +17,22 @@ function AddItemForm(props) {
     }
     props.onAddItem(item);
   }
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedItems, setLoadedItems] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:8080/categories').then(res => {
+      return res.json();
+    }).then(data =>{
+      console.log(data);
+      setIsLoading(false);
+      setLoadedItems(data);
+    });
+  },[])
+
+  if (isLoading) {
+    return (<div>Laeb...</div>); 
+  }
 
   return (
     <form onSubmit={formSubmitHandler}>
@@ -26,7 +42,7 @@ function AddItemForm(props) {
       <input type="number" required ref={priceInputRef} /><br />
       <label>Eseme kategooria</label><br />
       <select required ref={categoryInputRef}>
-        <option></option>
+        {loadedItems.map(item => <option value={item.name}>{item.name}</option> )}
       </select><br />
       <button>Sisesta uus ese</button>
     </form>
