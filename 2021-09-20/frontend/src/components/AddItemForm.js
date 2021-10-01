@@ -25,7 +25,9 @@ function AddItemForm(props) {
       <label>Eseme hind</label><br />
       <input type="number" required ref={priceInputRef} /><br />
       <label>Eseme kategooria</label><br />
-      <input type="text" required ref={categoryInputRef} /><br />
+      <select required ref={categoryInputRef}>
+        <option></option>
+      </select><br />
       <button>Sisesta uus ese</button>
     </form>
   );
