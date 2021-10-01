@@ -24,15 +24,4 @@ public class ItemController {
         itemService.saveItem(item);
         return "Ese edukalt lisatud " + item.getName();
     }
-
-    // tehke serverile restart
-    // localhost:8080/items
-
-    // delete päringu
-    // edit päringu
-    // view one item päringu
-
-    // andmebaas
-
-    // kategooria osas
 }
