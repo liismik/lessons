@@ -2,7 +2,7 @@ import Item from '../components/Item';
 
 function ItemList(props) {
   return(<div>
-    {props.items.map(item=> (
+    {props?.items?.map(item=> (
      <Item 
       key={item.id} 
       name={item.name} 
