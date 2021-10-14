@@ -1,7 +1,6 @@
 {
   "name": "backend-node",
   "version": "1.0.0",
-  "description": "",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -11,10 +10,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mongoose": "^6.0.6",
-    "nodemon": "^2.0.12"
+    "mongoose": "^6.0.10",
+    "nodemon": "^2.0.13"
   },
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "description": ""
 }

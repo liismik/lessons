@@ -1,8 +1,7 @@
 FROM node:14.17.5-alpine
+USER node
 
 ENV HOME=/home/node
-
-USER node
 
 RUN mkdir -p $HOME/app
 WORKDIR $HOME/app

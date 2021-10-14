@@ -30,7 +30,7 @@ function App() {
         show={show}
         setShow={setShow}
       />
-      <Greeting name="Raimo" age="34"/>
+      <Greeting name="Liisa" age="21"/>
     </div>
   );
 }
