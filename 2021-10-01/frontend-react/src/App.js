@@ -2,10 +2,12 @@ import { useState } from "react"
 import './App.css';
 import Fun from './components/Fun';
 import Greeting from './components/Greeting';
+import Age from './components/Age';
 
 function App() {
   const [magicNumber, setMagicNumber] = useState(0)
   const [show, setShow] = useState(true)
+  const [age, setAge] = useState()
 
   return (
     <div className="App">
@@ -30,7 +32,16 @@ function App() {
         show={show}
         setShow={setShow}
       />
-      <Greeting name="Raimo" age="34"/>
+      <Greeting name="Liisa" age="21"/>
+      <h3>What's your age?</h3>
+      <form onSubmit={(e)=>{
+          e.preventDefault()
+          setAge(e.target[0].value)
+        }}>
+        <input type="text" name="age"></input>
+        <input type="submit" />
+      </form>
+      {age && <Age age={age} />}
     </div>
   );
 }
