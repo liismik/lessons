@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be1894ba-8a48-4a06-b587-6c7ecde8cd07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/AddItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/AddItemForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/ItemList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/mihkel/backend/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/mihkel/backend/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/components/AddCategoryForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/components/AddCategoryForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/components/Category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/components/CategoryList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/pages/AddCategory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/pages/CategoryListPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021-10-04/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021-10-04/frontend/src/components/AddItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/components/AddItemForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021-10-04/frontend/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../2021-10-04/frontend/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021-10-04/java-backend/target/classes/ee/mihkel/backend/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../2021-10-04/java-backend/target/classes/ee/mihkel/backend/controller/ItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021-10-04/java-backend/target/classes/ee/mihkel/backend/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../2021-10-04/java-backend/target/classes/ee/mihkel/backend/model/Item.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +57,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../demo/demo_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -80,6 +94,10 @@
       <option name="presentableId" value="Default" />
       <updated>1633096801679</updated>
       <workItem from="1633096802751" duration="5692000" />
+      <workItem from="1635102235910" duration="425000" />
+      <workItem from="1635107446517" duration="63000" />
+      <workItem from="1635108582931" duration="11000" />
+      <workItem from="1635111633361" duration="277000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8e0640f-1555-43c0-bdb9-a403ecbb8068" name="Default Changelist" comment="" />
+    <list default="true" id="e8e0640f-1555-43c0-bdb9-a403ecbb8068" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/java-backend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/components/AddCategoryForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/components/AddCategoryForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/components/Category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/components/CategoryList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/pages/AddCategory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/pages/CategoryListPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021-10-04/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021-10-04/frontend/src/components/AddItemForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/components/AddItemForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021-10-04/frontend/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../2021-10-04/frontend/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2021-10-04/java-backend/src/main/java/ee/mihkel/backend/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021-10-04/java-backend/target/classes/ee/mihkel/backend/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2021-10-04/java-backend/target/classes/ee/mihkel/backend/controller/ItemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2021-10-04/java-backend/target/classes/ee/mihkel/backend/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2021-10-04/java-backend/target/classes/ee/mihkel/backend/model/Item.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/java-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -33,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633095504026</updated>
       <workItem from="1633095505542" duration="1278000" />
+      <workItem from="1635110572519" duration="881000" />
     </task>
     <servers />
   </component>
