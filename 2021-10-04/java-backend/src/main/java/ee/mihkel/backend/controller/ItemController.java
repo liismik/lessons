@@ -20,20 +20,14 @@ public class ItemController {
 
     // localhost:8080/items ja GET päring
     @GetMapping("items")
-        // tagastab esemete listi päringu lõpuks
     public List<Item> getItems() {
-        // pöördub itemService funktsiooni poole ja seal tehakse repository'ga
-        // suhtlus
         return itemService.getItems();
     }
 
-    // localhost:8080/items ja POST päring, millele on kaasa antud body
     @PostMapping("items")
-    // tagastab mittemidagi  // nõuab body ja mis tüübiks ta selle body teeb
-    public void postItem(@RequestBody Item item) {
-        // pöördub itemService funktsiooni poole ja seal tehakse repository'ga
-        // suhtlus
+    public String postItem(@RequestBody Item item) {
         itemService.saveItem(item);
+        return "Ese edukalt lisatud " + item.getName();
     }
 
     @DeleteMapping("delete-item/{id}")

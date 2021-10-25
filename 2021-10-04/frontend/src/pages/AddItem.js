@@ -1,4 +1,5 @@
 import AddItemForm from '../components/AddItemForm'
+import './AddItem.css';
 
 function AddItem() {
   function itemSubmitHandler(item) {
@@ -18,8 +19,8 @@ function AddItem() {
   // onAddItem kutsutakse välja AddItemForm sees props.onAddItem()
   // paremal pool võrdusmärgi panen käima ülemise funktsiooni
   return (
-    <div>
-      <h1>Lisa uus ese</h1>
+    <div className="addNewItem">
+      <h1 className="title">Lisa uus ese</h1>
       <AddItemForm onAddItem={itemSubmitHandler}/>
     </div>
     );
