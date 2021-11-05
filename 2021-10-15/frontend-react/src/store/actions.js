@@ -13,7 +13,6 @@ export const removePost = id => ({
   payload: id
 })
 
-// Lisada siis uus konstant selle jaoks ja muuta ka reduceris
 export const updatePosts = array => ({
   type: "POSTS_UPDATE",
   payload: array
