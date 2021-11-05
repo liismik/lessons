@@ -1,85 +1,92 @@
-import React from 'react';
-import { useState } from 'react';
+//+++
 import { Form, Input, Button } from 'antd';
 
 function Register() {
-    const [firstName, setFirst] = useState("");
-    const [lastName, setLast] = useState("")
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("")
 
-const CreateUser = async (user) => {
-    setFirst(user.firstname)
-    setLast(user.lastname)
-    setEmail(user.email)
-    setPassword(user.password)
-    const data = await fetch('http://localhost:8081/api/auth/signup/', {
+  const handleSubmit = async (values) => {
+
+    const user = {
+      firstName: values.firstName,
+      lastName: values.lastName,
+      email: values.email,
+      password: values.password
+    }
+
+    const res = await fetch('http://localhost:8081/api/auth/signup', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            email,
-            firstName,
-            lastName,
-            password
-          }),
-        })
+          'Content-Type': 'application/json'
+        },
+          body: JSON.stringify(user),
+      })
 
-    const result = await data.json()
+      if (res.ok) {
+        console.log("Success! User registered!")
+      }
+  }
 
-    console.log(result)
-}
+  return(
+    <>
+      <Form
+        onFinish={handleSubmit}
+      >
+        <Form.Item 
+          label="First Name"
+          name="firstName"
+          rules={[{
+            required: true
+          }]}
+        >
+        <Input />
+        </Form.Item>
+        <Form.Item 
+          label="Last Name"
+          name="lastName"
+          rules={[{
+            required: true
+          }]}
+        >
+        <Input />
+        </Form.Item>
+        <Form.Item 
+          label="E-mail"
+          name="email"
+          rules={[{
+            required: true
+          }]}
+        >
+        <Input />
+        </Form.Item>
 
-    return (
-        <Form onFinish={CreateUser}>
-            <Form.Item 
-                label="Eesnimi" 
-                name="firstname" 
-                rules={[{ 
-                    required: true, 
-                    message: "Palun sisestage eesnimi!" 
-                }]}
-            >
-                <Input />
-            </Form.Item>
-            <Form.Item 
-                label="Perekonnanimi" 
-                name="lastname" 
-                rules={[{ 
-                    required: true, 
-                    message: "Palun sisestage perekonnanimi!" 
-                }]}
-            >
-                <Input />
-            </Form.Item>
-            <Form.Item 
-                label="E-mail" 
-                name="email" 
-                rules={[{ 
-                    required: true, 
-                    message: "Palun sisestage e-maili aadress!" 
-                }]}
-            >
-                <Input />
-            </Form.Item>
-            <Form.Item 
-                label="Salasõna" 
-                name="password" 
-                rules={[{ 
-                    required: true, 
-                    message: "Palun sisestage eesnimi!" 
-                }]}
-            >
-                <Input.Password />
-            </Form.Item>
-            <Form.Item>
-                <Button type="primary" htmlType="submit">
-                    Registreeru
-                </Button>
-            </Form.Item>
-        </Form>
-    );
+        <Form.Item 
+          label="Password"
+          name="password"
+          rules={[{
+            required: true
+          }]}
+        >
+        <Input.Password />
+        </Form.Item>
+
+        <Form.Item 
+          label="Confirm Password"
+          name="confirm"
+          rules={[{
+            required: true
+          }]}
+        >
+        <Input.Password />
+        </Form.Item>
+
+        <Form.Item>
+          <Button type="primary" htmlType="submit">
+            Registreeru
+          </Button>
+        </Form.Item>
+
+      </Form>
+    </>
+  )
 }
 
 export default Register;

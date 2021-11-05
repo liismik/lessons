@@ -1,3 +1,4 @@
+//+++
 import React from 'react';
 import {useState, useEffect} from 'react'
 import { Table } from 'antd';
@@ -5,7 +6,7 @@ import MainLayout from '../components/layouts/MainLayout';
 
 const columns = [
     {
-      title: 'Title',
+      title: 'Pealkiri',
       dataIndex: 'title',
       key: 'title',
     },
@@ -15,12 +16,12 @@ const columns = [
       key: 'text',
     },
     {
-      title: 'Author',
+      title: 'Autor',
       dataIndex: 'user',
       key: 'user',
     },
     {
-        title: 'Created At',
+        title: 'Loodud',
         dataIndex: 'createdAt',
         key: 'createdAt',
       }
@@ -41,7 +42,7 @@ function ShowPosts() {
 
     if (isLoading) {
         return (
-            <div>Posts are loading..</div>
+            <div>Postid laevad..</div>
         )
     }
     return(

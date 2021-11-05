@@ -1,3 +1,4 @@
+//+++
 import React from "react"
 
 function Fun({ magicNumber, setMagicNumber, amount = 1, show, setShow }){

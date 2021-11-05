@@ -10,38 +10,41 @@ function Posts() {
 
 
     useEffect(() => {
-        dispatch(updatePosts([
-            {
-                id: 1,
-                title: "Test-prefetched-array-1"
-            },
-            {
-                id: 2,
-                title: "Test-prefetched-array-2"
-            },
-            {
-                id: 3,
-                title: "Test-prefetched-array-3"
-            },
-        ]))
-    }, [])
-
-    const handleSubmit = e => {
+        fetch('http://localhost:8081/api/post').then(res => {
+          return res.json();
+        }).then(async (data) => {
+          await dispatch(updatePosts(data))
+        })
+      }, []) // eslint-disable-line react-hooks/exhaustive-deps
+    
+      const handleSubmit = (e) => {
         e.preventDefault()
-
-        setTitle("")
-        addNewPost();
-        if (inputRef.current) inputRef.current.focus()
-    }
-
-    const addNewPost = () => {
+    
         const newPost = {
-            id: Date.now(),
-            title,
+          title,
+          authorId: state.auth.user.id,
         }
-
-        dispatch(addPost(newPost))
-    };
+    
+        setTitle("")
+    
+        addNewPost(newPost)
+    
+        if (inputRef.current) inputRef.current.focus()
+      }
+    
+      const addNewPost = async (post) => {
+        const res = await fetch('http://localhost:8081/api/post/create', {
+        method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+            body: JSON.stringify(post),
+        })
+    
+        const returnData = await res.json()
+    
+        dispatch(addPost(returnData))
+      }
 
     console.log({ inputRef })
     return (
