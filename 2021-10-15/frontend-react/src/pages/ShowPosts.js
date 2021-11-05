@@ -1,7 +1,8 @@
 //+++
 import React from 'react';
 import {useState, useEffect} from 'react'
-import { Table } from 'antd';
+import { Table, Button } from 'antd';
+import { Link } from 'react-router-dom';
 import MainLayout from '../components/layouts/MainLayout';
 
 const columns = [
@@ -11,7 +12,7 @@ const columns = [
       key: 'title',
     },
     {
-      title: 'Text',
+      title: 'Kirjeldus',
       dataIndex: 'text',
       key: 'text',
     },
@@ -24,7 +25,16 @@ const columns = [
         title: 'Loodud',
         dataIndex: 'createdAt',
         key: 'createdAt',
-      }
+    },
+    {
+        title: 'Muuda',
+        key: 'edit',
+        render: () => (
+            <Button>
+                <Link to="">Muuda</Link>
+            </Button>
+        )
+    }
   ];
 
 function ShowPosts() {

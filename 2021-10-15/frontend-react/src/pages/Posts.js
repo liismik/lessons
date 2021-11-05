@@ -53,7 +53,7 @@ function Posts() {
                 <h1>Lisa post</h1>
                 <form onSubmit={handleSubmit}>
                     <input ref={inputRef} type="text" value={title} onChange={e => setTitle(e.target.value)} autoFocus />
-                    <button type="submit">Submit</button>
+                    <button type="submit">Lisa</button>
                 </form>
 
                 {state.posts.data.map(e => 
