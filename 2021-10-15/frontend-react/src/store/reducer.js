@@ -1,4 +1,3 @@
-//+++
 import { POST_ADD, POST_REMOVE, USER_LOGIN, USER_LOGOUT } from "./actions";
 
 const postReducer = (state, action) => {

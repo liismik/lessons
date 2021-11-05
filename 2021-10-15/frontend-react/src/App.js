@@ -1,4 +1,3 @@
-//+++
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Posts from './pages/Posts';
 import ShowPosts from './pages/ShowPosts';

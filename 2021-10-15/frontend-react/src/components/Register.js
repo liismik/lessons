@@ -1,4 +1,3 @@
-//+++
 import { Form, Input, Button } from 'antd';
 
 function Register() {
