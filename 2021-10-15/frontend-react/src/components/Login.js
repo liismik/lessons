@@ -37,6 +37,7 @@ const Login = () => {
     <>
       <Form
         onFinish={handleSubmit}
+        style={{ textAlign:'right', width:'300px' }}
       >
         <Form.Item 
           label="E-mail"
@@ -45,7 +46,7 @@ const Login = () => {
             required: true
           }]}
         >
-        <Input />
+          <Input />
         </Form.Item>
         <Form.Item 
           label="Password"
@@ -54,7 +55,7 @@ const Login = () => {
             required: true
           }]}
         >
-        <Input.Password />
+          <Input.Password />
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit">

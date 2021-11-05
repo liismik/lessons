@@ -28,6 +28,7 @@ function Register() {
     <>
       <Form
         onFinish={handleSubmit}
+        style={{ textAlign:'right', width:'400px' }}
       >
         <Form.Item 
           label="First Name"
